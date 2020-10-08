@@ -26,11 +26,12 @@ class Patient
     
     
   def appointments
+    binding.pry
     Appointment.all.select do |appointment| # could use select
       appointment.patient
     end
   end
   
-  
+  doctors
   
 end
