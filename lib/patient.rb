@@ -30,8 +30,9 @@ class Patient
       if appointment.patient = self
       
       end
-      appointment.patient
+      
     end
+    appointment.patient
   end
   
   
