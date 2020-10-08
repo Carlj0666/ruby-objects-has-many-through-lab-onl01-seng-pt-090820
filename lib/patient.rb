@@ -26,10 +26,8 @@ class Patient
     
     
   def appointments
-    Appointment.all.map do |appointment| # could use select
-      if appointment.patient = self
-        appointment.patient
-      end
+    Appointment.all.select do |appointment| # could use select
+       appointment.patient = self
     end
   end
   
