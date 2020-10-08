@@ -27,11 +27,18 @@ class Patient
     
   def appointments
     #binding.pry
-    Appointment.all.collect do |appointment| # could use select
-      appointment.doctor
+    Appointment.all.select do |appointment| # could use select
+      appointment.doctor == self
     end
   end
   
+  def doctors
+    Appointment.all.collect do |appointment|
+      if appointment.patient = self
+        appointment.doctor
+      end
+    end
+  end
   
   #   def genres
   #   Song.all.collect do |song|
