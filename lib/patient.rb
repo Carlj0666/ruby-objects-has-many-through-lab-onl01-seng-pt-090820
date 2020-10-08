@@ -21,8 +21,14 @@ class Patient
   
   def new_appointment(date, doctor)
     #binding.pry
-    return Appointment.new(date, self, doctor)
+    Appointment.new(date, doctor)
   end
+  
+  #   def new_song(name, genre)
+  #   #binding.pry
+  #   Song.new(name, self, genre)
+  #   #song.artist = self
+  # end
     
     
   def appointments
