@@ -30,12 +30,23 @@ class Doctor
     end
   end
   
+  
   def patients
-    Appointment.all.map do |appointment|
+    Appointment.all.collect do |appointment|
       #binding.pry
-      appointment.doctor
+      if appointment.doctor == self
+        appointment.patient
+      end
     end
   end
   
+  # def genres
+  #   Song.all.collect do |song|
+  #     #binding.pry
+  #     if song.artist == self
+  #       song.genre
+  #     end
+  #   end
+  # end
   
 end
