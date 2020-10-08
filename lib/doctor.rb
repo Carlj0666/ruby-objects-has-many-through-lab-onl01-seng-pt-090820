@@ -40,13 +40,5 @@ class Doctor
     end
   end
   
-  # def genres
-  #   Song.all.collect do |song|
-  #     #binding.pry
-  #     if song.artist == self
-  #       song.genre
-  #     end
-  #   end
-  # end
   
 end
