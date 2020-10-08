@@ -3,7 +3,7 @@ require "pry"
 
 class Patient
   
-  attr_accessor 
+  attr_accessor :name
   
   @@all = []
   
