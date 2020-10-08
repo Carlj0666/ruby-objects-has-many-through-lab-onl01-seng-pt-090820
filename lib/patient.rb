@@ -26,7 +26,7 @@ class Patient
     
     
   def appointments
-    binding.pry
+    #binding.pry
     Appointment.all.collect do |appointment| # could use select
       appointment.doctor
     end
