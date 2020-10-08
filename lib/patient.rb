@@ -27,7 +27,7 @@ class Patient
     
   def appointments
     #binding.pry
-    Appointment.all.select do |appointment| # could use select
+    Appointment.all.map do |appointment| # could use select
       appointment.doctor
     end
   end
