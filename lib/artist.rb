@@ -29,6 +29,7 @@ class Artist
     end
   end
   
+  # The Patient class needs an instance method, #appointments, that iterates through the Appointments array and returns Appointments that belong to the patient.
   
   def genres
     Song.all.collect do |song|
