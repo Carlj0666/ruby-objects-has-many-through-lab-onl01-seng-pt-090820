@@ -35,10 +35,10 @@ class Patient
   
   def doctors
     Appointment.all.collect do |appointment|
-      if appointment.patient = self
-        
+      if appointment.patient == self
+        appointment.doctor
       end
-      appointment.doctor
+      
     end
   end
   
