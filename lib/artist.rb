@@ -29,7 +29,6 @@ class Artist
     end
   end
   
-  # The Patient class needs an instance method, #doctors, that iterates over that patient's Appointments and collects the doctor that belongs to each Appointment.
   
   def genres
     Song.all.collect do |song|
