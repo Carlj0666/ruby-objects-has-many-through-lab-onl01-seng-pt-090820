@@ -26,13 +26,13 @@ class Patient
     
     
   def appointments
-    Appointment.all.select do |appointment| # could use select
+    Appointment.all.collect do |appointment| # could use select
       if appointment.patient = self
-      
+      appointment.patient
       end
       
     end
-    appointment.patient
+    
   end
   
   
